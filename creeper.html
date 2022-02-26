@@ -7,32 +7,41 @@
     <title>Document</title>
 </head>
 <body>
-    <canvas width="600px" height="400px"></canvas>
+    <canvas width="600px" height="400px">
+        
+    </canvas>
+    
+    <script>
+        let canvas = document.querySelector("canvas");
+        let pincel = canvas.getContext("2d");
 
-<script>
-    // query para pega o elemento canvas
-    let tela = document.querySelector('canvas');    
-    // variavel para determinar as dimensoes do canvas
-    pincel = tela.getContext('2d');
-    // definindo a cor de fundo do canvas
-    pincel.fillStyle = 'white';
-    pincel.fillRect(0,0,600,400);
-    // preenchendo um retangulo com a verde
-    pincel.fillStyle = 'green';
-    pincel.fillRect(0,0,200,400);
-    // preenchendo um retangulo com a vermelha
-    pincel.fillStyle = 'red';
-    pincel.fillRect(400,0,200,400);
-    // preenchendo um triangulo com a amarela
-    pincel.fillStyle = 'yellow';
-    // começando a mover o "pincel"
-    pincel.beginPath();
-    // definindo o ponto inicial
-    pincel.moveTo(300,200);
-    // criando uma linha nas coordenadas abaixos
-    pincel.lineTo(200,400);
-    pincel.lineTo(400,400);
-    pincel.fill();
-</script>
+        canvas.style.backgroundColor = 'gray'
+
+        pincel.moveTo(125,20);
+
+        pincel.fillStyle = 'green';
+        pincel.fillRect(125,20,350,300);
+
+        pincel.moveTo(180,60);
+        pincel.fillStyle = 'black';
+        pincel.fillRect(180,60,90,90);
+
+        pincel.moveTo(330,60);
+        pincel;fillStyle = 'black';
+        pincel.fillRect(330,60,90,90);
+
+        pincel.moveTo(264,150);
+        pincel.fillStyle = 'black';
+        pincel.fillRect(264,150,70,100);
+        
+        pincel.moveTo(225,210);
+        pincel.fillStyle = 'black';
+        pincel.fillRect(225,210,40,110);
+
+        pincel.moveTo(330,210);
+        pincel.fillStyle = 'black';
+        pincel.fillRect(330,210,40,110);
+
+    </script>
 </body>
 </html>
