@@ -12,17 +12,27 @@
 <script>
     // query para pega o elemento canvas
     let tela = document.querySelector('canvas');    
-    //
+    // variavel para determinar as dimensoes do canvas
     pincel = tela.getContext('2d');
-    
+    // definindo a cor de fundo do canvas
     pincel.fillStyle = 'white';
     pincel.fillRect(0,0,600,400);
-    
+    // preenchendo um retangulo com a verde
     pincel.fillStyle = 'green';
     pincel.fillRect(0,0,200,400);
-
+    // preenchendo um retangulo com a vermelha
     pincel.fillStyle = 'red';
     pincel.fillRect(400,0,200,400);
+    // preenchendo um triangulo com a amarela
+    pincel.fillStyle = 'yellow';
+    // começando a mover o "pincel"
+    pincel.beginPath();
+    // definindo o ponto inicial
+    pincel.moveTo(300,200);
+    // criando uma linha nas coordenadas abaixos
+    pincel.lineTo(200,400);
+    pincel.lineTo(400,400);
+    pincel.fill();
 </script>
 </body>
 </html>
